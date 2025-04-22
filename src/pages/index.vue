@@ -2,6 +2,38 @@
 defineOptions({
   name: 'IndexPage',
 })
+const cards = [
+  {
+    icon: 'i-mdi-currency-usd',
+    title: 'Cost optimization',
+    text: 'Lower operational costs and innovate by optimizing all the elements.',
+  },
+  {
+    icon: 'i-mdi-earth',
+    title: 'Reduced transit timing',
+    text: 'Lessen time-to-market and increase delivery speed.',
+  },
+  {
+    icon: 'i-mdi-warehouse',
+    title: 'Warehouse operation',
+    text: 'Ensure operational flows are scalable, reducing cost-to-serve.',
+  },
+  {
+    icon: 'i-mdi-warehouse',
+    title: 'Warehouse operation',
+    text: 'Ensure operational flows are scalable, reducing cost-to-serve.',
+  },
+  {
+    icon: 'i-mdi-warehouse',
+    title: 'Warehouse operation',
+    text: 'Ensure operational flows are scalable, reducing cost-to-serve.',
+  },
+  {
+    icon: 'i-mdi-earth',
+    title: 'Reduced transit timing',
+    text: 'Lessen time-to-market and increase delivery speed.',
+  },
+]
 </script>
 
 <template>
@@ -44,4 +76,46 @@ defineOptions({
       </a>
     </div>
   </main>
+  <section>
+    <div class="mx-auto mt-10 container">
+      <div class="text-center">
+        <h1 class="text-3xl font-bold mb-4">
+          Our Services
+        </h1>
+        <p class="text-gray-600 mb-8">
+          We offer a wide range of logistics and transport services to meet your needs.
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-6 justify-center">
+        <ServiceCardComponent
+          v-for="(item, index) in cards"
+          :key="index"
+          class="mb-10"
+          :icon="item.icon"
+          :title="item.title"
+          :text="item.text"
+          :number="index + 1"
+        />
+      </div>
+    </div>
+
+    <div class="mx-auto mt-20 flex gap-10 container">
+      <div class="flex w-1/2">
+        <div class="w-1/2">
+          <img src="https://plus.unsplash.com/premium_photo-1661932036915-4fd90bec6e8a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGxvZ2lzdGljc3xlbnwwfHwwfHx8MA%3D%3D" class="min-h-[600px] w-full object-cover" alt="">
+        </div>
+        <div class="ml-10 w-1/2">
+          <img src="https://plus.unsplash.com/premium_photo-1661932036915-4fd90bec6e8a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGxvZ2lzdGljc3xlbnwwfHwwfHx8MA%3D%3D" class="min-h-[600px] w-full object-cover" alt="">
+        </div>
+      </div>
+      <div class="w-1/2">
+        <h1 class="text-6xl font-800">
+          We provide full rang of transport services
+        </h1>
+        <p class="mt-5">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis eum libero deserunt ex quae exercitationem repellendus quam voluptatem deleniti animi expedita, illum non possimus architecto ratione soluta facilis impedit veniam!
+        </p>
+      </div>
+    </div>
+  </section>
 </template>

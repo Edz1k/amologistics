@@ -20,7 +20,7 @@ function submitForm() {
   <div>
     <!-- Кнопка -->
     <button
-      class="text-white px-5 py-2 rounded-lg bg-red-500 transition transition-all duration-300 hover:bg-red-600"
+      class="text-white px-5 py-2 rounded-lg bg-red-500 w-full transition transition-all duration-300 hover:bg-red-600"
       @click="openModal"
     >
       Заказать звонок
