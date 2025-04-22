@@ -20,8 +20,10 @@
   "devDependencies": {
     "@antfu/eslint-config": "catalog:dev",
     "@iconify-json/carbon": "catalog:build",
+    "@iconify-json/mdi": "catalog:",
     "@types/node": "catalog:dev",
     "@unocss/eslint-plugin": "catalog:dev",
+    "@unocss/preset-icons": "catalog:",
     "@vitejs/plugin-vue": "catalog:build",
     "@vue-macros/volar": "catalog:dev",
     "@vue/test-utils": "catalog:dev",

@@ -8,6 +8,9 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AskPhoneCallComponent: typeof import('./src/components/AskPhoneCallComponent.vue')['default']
+    CallRequestButton: typeof import('./src/components/CallRequestButton.vue')['default']
+    NavigationComponent: typeof import('./src/components/NavigationComponent.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheCounter: typeof import('./src/components/TheCounter.vue')['default']
