@@ -67,20 +67,20 @@ const cards = [
         <!-- Горизонтальная линия -->
         <div class="bg-red-500 h-2 w-[100px] absolute" />
         <!-- Вертикальная линия -->
-        <div class="bg-red-500 h-[340px] w-2 absolute" />
+        <div class="bg-red-500 h-[400px] w-2 absolute" />
 
-        <div class="bg-red-500 h-2 w-[150px] top-85 absolute" />
+        <div class="bg-red-500 h-2 w-[150px] top-100 absolute" />
       </div>
 
       <div class="w-1/2">
-        <div class="text-xl line-height-relaxed ml-10 p-6 rounded-lg bg-white shadow-lg">
-          <p>
-            Международные грузоперевозки из Европы в Казахстан
+        <div class="text-xl line-height-relaxed ml-10 p-6 border border-gray-200/50 rounded-2xl bg-white/30 shadow-2xl backdrop-blur-sm">
+          <p class="mb-4">
+            НАДЕЖНЫЙ ПОСТАВЩИК ТРАНСПОРТНЫХ УСЛУГ
           </p>
-          <h1 class="text-3xl font-bold mb-4">
-            АМОЛОГИСТИК – НАДЕЖНЫЙ ПОСТАВЩИК ТРАНПОРТНЫХ УСЛУГ
+          <h1 class="text-3xl font-bold mb-6">
+            АМОЛОГИСТИК – Международные грузоперевозки из Европы в Казахстан
           </h1>
-          <ul class="text-2xl pl-5 list-none">
+          <ul class="text-2xl pl-5 list-none space-y-3">
             <li>- Комплектные авто, контейнера, вагоны</li>
             <li>- Автоконсолидация (сборные грузы)</li>
             <li>- Негабаритные перевозки (траллы, вагоны)</li>
@@ -104,7 +104,7 @@ const cards = [
       </a>
     </div>
   </main>
-  <section class="mt-20">
+  <section class="py-16">
     <div class="mx-auto container">
       <div class="text-center">
         <h1 class="text-3xl font-bold mb-4">
@@ -127,7 +127,7 @@ const cards = [
       </div>
     </div>
   </section>
-  <section class="mt-10 bg-gray-50 flex h-[80vh] items-center">
+  <section class="mt-10 py-16 bg-gray-50 flex items-center">
     <div class="mx-auto px-4 flex flex-col gap-12 container lg:flex-row">
       <!-- Левая часть: заголовок и текст -->
       <div class="flex flex-col w-full justify-center lg:w-1/2">
