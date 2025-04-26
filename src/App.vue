@@ -3,8 +3,9 @@ import Toast from 'primevue/toast'
 </script>
 
 <template>
-  <Toast />
   <main font-sans>
+    <Toast />
+    <NavbarComponent />
     <RouterView />
     <TheFooter />
   </main>

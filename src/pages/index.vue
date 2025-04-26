@@ -1,7 +1,17 @@
 <script setup lang="ts" generic="T extends any, O extends any">
+import CallRequestFormComponent from '~/components/CallRequestFormComponent.vue'
+
 defineOptions({
   name: 'IndexPage',
 })
+const services = [
+  { title: 'Страхование грузов', icon: 'warehouse' },
+  { title: 'Помощь в таможенном оформлении', icon: 'warehouse' },
+  { title: 'Складские услуги', icon: 'warehouse' },
+  { title: 'Проф. сопровождение менеджера на всех этапах', icon: 'warehouse' },
+  { title: 'Проф. сопровождение менеджера на всех этапах', icon: 'warehouse' },
+  { title: 'Проф. сопровождение менеджера на всех этапах', icon: 'warehouse' },
+]
 const cards = [
   {
     icon: 'i-mdi-currency-usd',
@@ -37,7 +47,6 @@ const cards = [
 </script>
 
 <template>
-  <NavigationComponent />
   <main class="bg-[url('https://wallpapers.com/images/featured/cool-trucks-cdvn4ttk7o8geggz.jpg')] bg-gray-100 flex flex-col h-[90vh] justify-center bg-cover bg-center bg-no-repeat">
     <div class="m-auto container">
       <div class="h-10 hidden relative md:block">
@@ -76,8 +85,8 @@ const cards = [
       </a>
     </div>
   </main>
-  <section>
-    <div class="mx-auto mt-10 container">
+  <section class="mt-20">
+    <div class="mx-auto container">
       <div class="text-center">
         <h1 class="text-3xl font-bold mb-4">
           Our Services
@@ -98,23 +107,63 @@ const cards = [
         />
       </div>
     </div>
-
-    <div class="mx-auto mt-20 flex gap-10 container">
-      <div class="flex w-1/2">
-        <div class="w-1/2">
-          <img src="https://plus.unsplash.com/premium_photo-1661932036915-4fd90bec6e8a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGxvZ2lzdGljc3xlbnwwfHwwfHx8MA%3D%3D" class="min-h-[600px] w-full object-cover" alt="">
-        </div>
-        <div class="ml-10 w-1/2">
-          <img src="https://plus.unsplash.com/premium_photo-1661932036915-4fd90bec6e8a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGxvZ2lzdGljc3xlbnwwfHwwfHx8MA%3D%3D" class="min-h-[600px] w-full object-cover" alt="">
-        </div>
-      </div>
-      <div class="w-1/2">
-        <h1 class="text-6xl font-800">
-          We provide full rang of transport services
+  </section>
+  <section class="mt-10 bg-gray-50 flex h-[80vh] items-center">
+    <div class="mx-auto px-4 flex flex-col gap-12 container lg:flex-row">
+      <!-- Левая часть: заголовок и текст -->
+      <div class="flex flex-col w-full justify-center lg:w-1/2">
+        <h1 class="text-4xl text-gray-900 font-bold md:text-6xl dark:text-white">
+          Мы предоставляем полный спектр транспортных услуг
         </h1>
-        <p class="mt-5">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis eum libero deserunt ex quae exercitationem repellendus quam voluptatem deleniti animi expedita, illum non possimus architecto ratione soluta facilis impedit veniam!
+        <p class="text-gray-600 mt-6 dark:text-gray-300">
+          Оставьте заявку — мы перезвоним вам и проконсультируем по любому вопросу, связанному с логистикой.
         </p>
+      </div>
+
+      <!-- Правая часть: форма -->
+      <div class="flex flex-col w-full lg:w-1/2">
+        <CallRequestFormComponent />
+      </div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <DirectionMapComponent />
+    </div>
+  </section>
+  <section class="py-16 bg-gray-50">
+    <!-- Заголовок -->
+    <div class="mx-auto mb-12 text-center max-w-3xl">
+      <h2 class="text-4xl font-extrabold">
+        С нами удобно и безопасно работать
+      </h2>
+      <p class="text-gray-600 mt-4">
+        Мы несем полную ответственность за сохранность вашего груза и сроки поставки
+      </p>
+    </div>
+
+    <div class="mx-auto px-4 gap-6 grid container lg:grid-cols-3 sm:grid-cols-2">
+      <div
+        v-for="(item, idx) in services"
+        :key="idx"
+        class="group p-6 rounded-lg bg-white shadow transition-shadow duration-300 hover:shadow-lg"
+      >
+        <!-- Круг + иконка -->
+        <div
+          class="mx-auto mb-4 rounded-full bg-red-500 flex h-16 w-16 transition-colors items-center justify-center group-hover:bg-red-700"
+        >
+          <!-- Вот здесь: div с классом i-mdi:… -->
+          <div
+            class="text-white h-8 w-8" :class="[
+              `i-mdi-${item.icon}`, // цвет
+            ]"
+          />
+        </div>
+
+        <!-- Заголовок карточки -->
+        <h3 class="text-xl font-semibold text-center">
+          {{ item.title }}
+        </h3>
       </div>
     </div>
   </section>
