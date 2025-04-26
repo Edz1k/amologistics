@@ -14,6 +14,7 @@ declare module 'vue' {
     CallRequestFormComponent: typeof import('./src/components/CallRequestFormComponent.vue')['default']
     CardFullComponent: typeof import('./src/components/CardFullComponent.vue')['default']
     DirectionMapComponent: typeof import('./src/components/DirectionMapComponent.vue')['default']
+    FooterComponent: typeof import('./src/components/FooterComponent.vue')['default']
     InputForm: typeof import('./src/components/InputForm.vue')['default']
     ModalCallComponent: typeof import('./src/components/ModalCallComponent.vue')['default']
     NavbarComponent: typeof import('./src/components/NavbarComponent.vue')['default']

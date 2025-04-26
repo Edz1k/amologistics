@@ -4,44 +4,56 @@ import CallRequestFormComponent from '~/components/CallRequestFormComponent.vue'
 defineOptions({
   name: 'IndexPage',
 })
+const steps = [
+  { id: '01', label: 'Вы обращаетесь за просчетом стоимости доставки' },
+  { id: '02', label: 'Наши специалисты производят расчет и подбирают оптимальный маршрут' },
+  { id: '03', label: 'Заключение договора' },
+  { id: '04', label: 'Доставка груза и подписание документов' },
+  { id: '05', label: 'Груз доставлен, вы довольны результатом' },
+]
 const services = [
-  { title: 'Страхование грузов', icon: 'warehouse' },
-  { title: 'Помощь в таможенном оформлении', icon: 'warehouse' },
+  { title: 'Страхование грузов', icon: 'shield-check' },
+  { title: 'Помощь в таможенном оформлении', icon: 'file-certificate-outline' },
   { title: 'Складские услуги', icon: 'warehouse' },
   { title: 'Проф. сопровождение менеджера на всех этапах', icon: 'warehouse' },
-  { title: 'Проф. сопровождение менеджера на всех этапах', icon: 'warehouse' },
-  { title: 'Проф. сопровождение менеджера на всех этапах', icon: 'warehouse' },
+  { title: 'Проф. сопровождение менеджера на всех этапах', icon: 'account-tie' },
+  { title: 'Страхование грузов', icon: 'shield-check' },
 ]
 const cards = [
   {
+    icon: 'i-mdi-sync',
+    title: 'Гибкость',
+    text: 'Перевозка разных категорий грузов на любые расстояния',
+  },
+  {
+    icon: 'i-mdi-earth',
+    title: 'География',
+    text: 'Заберем ваш товар из любого города',
+  },
+  {
+    icon: 'i-mdi-school',
+    title: 'Профессионализм',
+    text: 'Наши менеджеры имеют большой опыт в сфере международной логистики',
+  },
+  {
+    icon: 'i-mdi-clock-time-four-outline',
+    title: 'Доступность ',
+    text: 'Мы всегда на связи 24/7. ',
+  },
+  {
+    icon: 'i-mdi-lock-check-outline',
+    title: 'Надежность',
+    text: 'Обязательное страхование грузов',
+  },
+  {
+    icon: 'i-mdi-handshake',
+    title: 'Сотрудничество',
+    text: 'Личный менеджер предлагает решения, ориентируясь на Ваши потребности и приоритеты',
+  },
+  {
     icon: 'i-mdi-currency-usd',
-    title: 'Cost optimization',
-    text: 'Lower operational costs and innovate by optimizing all the elements.',
-  },
-  {
-    icon: 'i-mdi-earth',
-    title: 'Reduced transit timing',
-    text: 'Lessen time-to-market and increase delivery speed.',
-  },
-  {
-    icon: 'i-mdi-warehouse',
-    title: 'Warehouse operation',
-    text: 'Ensure operational flows are scalable, reducing cost-to-serve.',
-  },
-  {
-    icon: 'i-mdi-warehouse',
-    title: 'Warehouse operation',
-    text: 'Ensure operational flows are scalable, reducing cost-to-serve.',
-  },
-  {
-    icon: 'i-mdi-warehouse',
-    title: 'Warehouse operation',
-    text: 'Ensure operational flows are scalable, reducing cost-to-serve.',
-  },
-  {
-    icon: 'i-mdi-earth',
-    title: 'Reduced transit timing',
-    text: 'Lessen time-to-market and increase delivery speed.',
+    title: 'Выгода',
+    text: 'Гибкие условия оплаты и лучшие цены',
   },
 ]
 </script>
@@ -82,7 +94,7 @@ const cards = [
           </div>
           <div class="text-sm leading-tight">
             <div class="text-xs text-gray-600">
-              Voice Call
+              Позвоните нам
             </div>
             <div class="text-black font-semibold">
               +77751442023
@@ -96,10 +108,10 @@ const cards = [
     <div class="mx-auto container">
       <div class="text-center">
         <h1 class="text-3xl font-bold mb-4">
-          Our Services
+          Почему выбирают нас
         </h1>
         <p class="text-gray-600 mb-8">
-          We offer a wide range of logistics and transport services to meet your needs.
+          Мы предоставляем лучший сервис на всех этапах доставки: от расчёта стоимости до получения груза.
         </p>
       </div>
       <div class="flex flex-wrap gap-6 justify-center">
@@ -134,8 +146,57 @@ const cards = [
     </div>
   </section>
   <section>
-    <div>
-      <DirectionMapComponent />
+    <div class="mx-auto py-16 flex flex-col gap-12 items-center container md:flex-row">
+      <!-- Левая часть: карта -->
+      <div class="flex w-full justify-center md:w-1/2">
+        <DirectionMapComponent />
+      </div>
+
+      <!-- Правая часть: список -->
+      <div class="w-full md:w-1/2">
+        <h2 class="text-4xl text-gray-900 font-bold mb-12 text-center md:text-left">
+          Что мы перевозим
+        </h2>
+
+        <ul class="gap-8 grid sm:grid-cols-2">
+          <li class="p-6 text-center border border-gray-200 rounded-2xl bg-white flex flex-col shadow transition-all items-center hover:shadow-lg">
+            <div class="i-mdi-truck text-5xl text-red-500 mb-4" />
+            <span class="text-lg text-gray-800 font-semibold">
+              Строительные материалы
+            </span>
+          </li>
+          <li class="p-6 text-center border border-gray-200 rounded-2xl bg-white flex flex-col shadow transition-all items-center hover:shadow-lg">
+            <div class="i-mdi-cog-outline text-5xl text-red-500 mb-4" />
+            <span class="text-lg text-gray-800 font-semibold">
+              Оборудование и запчасти
+            </span>
+          </li>
+          <li class="p-6 text-center border border-gray-200 rounded-2xl bg-white flex flex-col shadow transition-all items-center hover:shadow-lg">
+            <div class="i-mdi-cart-outline text-5xl text-red-500 mb-4" />
+            <span class="text-lg text-gray-800 font-semibold">
+              Товары народного потребления
+            </span>
+          </li>
+          <li class="p-6 text-center border border-gray-200 rounded-2xl bg-white flex flex-col shadow transition-all items-center hover:shadow-lg">
+            <div class="i-mdi-alert-octagon-outline text-5xl text-red-500 mb-4" />
+            <span class="text-lg text-gray-800 font-semibold">
+              Опасные вещества
+            </span>
+          </li>
+          <li class="p-6 text-center border border-gray-200 rounded-2xl bg-white flex flex-col shadow transition-all items-center hover:shadow-lg">
+            <div class="i-mdi-food-apple text-5xl text-red-500 mb-4" />
+            <span class="text-lg text-gray-800 font-semibold">
+              Продукты питания
+            </span>
+          </li>
+          <li class="p-6 text-center border border-gray-200 rounded-2xl bg-white flex flex-col shadow transition-all items-center hover:shadow-lg">
+            <div class="i-mdi-dots-horizontal text-5xl text-red-500 mb-4" />
+            <span class="text-lg text-gray-800 font-semibold">
+              И многое другое…
+            </span>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
   <section class="py-16 bg-gray-50">
@@ -159,10 +220,9 @@ const cards = [
         <div
           class="mx-auto mb-4 rounded-full bg-red-500 flex h-16 w-16 transition-colors items-center justify-center group-hover:bg-red-700"
         >
-          <!-- Вот здесь: div с классом i-mdi:… -->
           <div
             class="text-white h-8 w-8" :class="[
-              `i-mdi-${item.icon}`, // цвет
+              `i-mdi-${item.icon}`,
             ]"
           />
         </div>
@@ -171,6 +231,28 @@ const cards = [
         <h3 class="text-xl font-semibold text-center">
           {{ item.title }}
         </h3>
+      </div>
+    </div>
+  </section>
+  <section class="py-16">
+    <div class="mx-auto text-center container">
+      <h2 class="text-4xl font-bold mb-20">
+        Как мы работаем
+      </h2>
+
+      <div class="flex flex-col gap-12 justify-between md:flex-row">
+        <div
+          v-for="(step, idx) in steps"
+          :key="idx"
+          class="flex flex-col items-center"
+        >
+          <div class="text-2xl text-white font-bold rounded-full bg-red-500 flex h-16 w-16 items-center justify-center">
+            {{ step.id }}
+          </div>
+          <p class="text-gray-700 mt-4 max-w-[220px]">
+            {{ step.label }}
+          </p>
+        </div>
       </div>
     </div>
   </section>

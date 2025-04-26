@@ -40,19 +40,16 @@ const directions = ref([
 </script>
 
 <template>
-  <div class="mx-auto flex container">
-    <div class="w-1/2 relative">
-      <img src="/11383065.png" alt="" class="w-full">
-      <div
-        v-for="(d, i) in directions"
-        :key="i"
-        class="-translate-x-1/2 -translate-y-1/2 px-2 py-1 rounded bg-white flex shadow transform items-center absolute space-x-2"
-        :style="{ left: `${d.x}%`, top: `${d.y}%` }"
-      >
-        <img :src="d.flag" alt="" class="rounded-sm h-4 w-6 object-cover">
-        <span class="text-sm font-medium">{{ d.label }}</span>
-      </div>
+  <div class="w-full relative">
+    <img src="/11383065.png" alt="" class="w-full">
+    <div
+      v-for="(d, i) in directions"
+      :key="i"
+      class="-translate-x-1/2 -translate-y-1/2 px-2 py-1 rounded bg-white flex shadow transform items-center absolute space-x-2"
+      :style="{ left: `${d.x}%`, top: `${d.y}%` }"
+    >
+      <img :src="d.flag" alt="" class="rounded-sm h-4 w-6 object-cover">
+      <span class="text-sm font-medium">{{ d.label }}</span>
     </div>
-    <div />
   </div>
 </template>
