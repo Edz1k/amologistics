@@ -47,25 +47,32 @@ const cards = [
 </script>
 
 <template>
-  <main class="bg-[url('https://wallpapers.com/images/featured/cool-trucks-cdvn4ttk7o8geggz.jpg')] bg-gray-100 flex flex-col h-[90vh] justify-center bg-cover bg-center bg-no-repeat">
+  <main
+    class="bg-[url('https://wallpapers.com/images/featured/cool-trucks-cdvn4ttk7o8geggz.jpg')] bg-gray-100 flex flex-col h-[90vh] justify-center bg-cover bg-no-repeat"
+  >
     <div class="m-auto container">
       <div class="h-10 hidden relative md:block">
         <!-- Горизонтальная линия -->
         <div class="bg-red-500 h-2 w-[100px] absolute" />
         <!-- Вертикальная линия -->
-        <div class="bg-red-500 h-50 w-2 absolute" />
+        <div class="bg-red-500 h-[340px] w-2 absolute" />
 
-        <div class="bg-red-500 h-2 w-[150px] top-50 absolute" />
+        <div class="bg-red-500 h-2 w-[150px] top-85 absolute" />
       </div>
 
       <div class="w-1/2">
-        <div class="text-white ml-10">
+        <div class="text-xl line-height-relaxed ml-10 p-6 rounded-lg bg-white shadow-lg">
           <p>
-            Добро пожаловать на главную страницу нашего сайта!
+            Международные грузоперевозки из Европы в Казахстан
           </p>
           <h1 class="text-3xl font-bold mb-4">
-            Logistics & <br> Transport Company
+            АМОЛОГИСТИК – НАДЕЖНЫЙ ПОСТАВЩИК ТРАНПОРТНЫХ УСЛУГ
           </h1>
+          <ul class="text-2xl pl-5 list-none">
+            <li>- Комплектные авто, контейнера, вагоны</li>
+            <li>- Автоконсолидация (сборные грузы)</li>
+            <li>- Негабаритные перевозки (траллы, вагоны)</li>
+          </ul>
         </div>
       </div>
       <a href="tel:+77751442023">
