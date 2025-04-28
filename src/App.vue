@@ -7,6 +7,6 @@ import Toast from 'primevue/toast'
     <Toast />
     <NavbarComponent />
     <RouterView />
-    <FooterComponent />
+    <FooterComponent id="contacts" class="scroll-mt-24" />
   </main>
 </template>

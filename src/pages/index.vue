@@ -223,7 +223,7 @@ const cards = [
     </section>
 
     <!-- Как мы работаем -->
-    <section id="about" class="py-20">
+    <section id="about" class="py-20 scroll-mt-24">
       <div class="mx-auto text-center container">
         <h2 class="text-4xl font-bold mb-20">
           Как мы работаем
