@@ -42,7 +42,7 @@ onMounted(() => {
       isScrolled ? 'shadow-lg' : 'shadow-md',
     ]"
   >
-    <div class="mx-auto px-4 py-3 flex items-center justify-between container">
+    <div class="mx-auto px-4 py-1 flex items-center justify-between container">
       <!-- Логотип -->
       <a href="/" class="flex items-center">
         <div class="p-2 rounded bg-red-500">
@@ -75,24 +75,10 @@ onMounted(() => {
         </a>
         <!-- Бургер -->
         <div
-          class="flex flex-col h-8 w-8 cursor-pointer justify-between relative"
+          class="text-3xl text-gray-700 flex h-8 w-8 cursor-pointer transition-all duration-300 items-center justify-center"
           @click="toggleMobileMenu"
         >
-          <span
-            class="bg-gray-700 h-0.5 block transition-all duration-300" :class="[
-              isMobileMenuOpen ? 'rotate-45 translate-y-3' : '',
-            ]"
-          />
-          <span
-            class="bg-gray-700 h-0.5 block transition-all duration-300" :class="[
-              isMobileMenuOpen ? 'opacity-0' : '',
-            ]"
-          />
-          <span
-            class="bg-gray-700 h-0.5 block transition-all duration-300" :class="[
-              isMobileMenuOpen ? '-rotate-45 -translate-y-3' : '',
-            ]"
-          />
+          <div :class="isMobileMenuOpen ? 'i-mdi-close' : 'i-mdi-menu'" />
         </div>
       </div>
     </div>

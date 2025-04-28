@@ -7,6 +7,6 @@ import Toast from 'primevue/toast'
     <Toast />
     <NavbarComponent />
     <RouterView />
-    <TheFooter />
+    <FooterComponent />
   </main>
 </template>
