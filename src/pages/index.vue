@@ -126,7 +126,13 @@ const cards = [
     </section>
 
     <!-- Заказать консультацию -->
-    <section class="mt-10 py-16 bg-gray-50 flex items-center">
+    <section class="mt-10 py-16 bg-gray-50 flex items-center relative">
+      <img
+        src="/samolet.png"
+        alt=""
+        class="h-[200px] w-[200px] hidden left-0 top-90 absolute xl:block"
+      >
+
       <div class="mx-auto px-4 flex flex-col gap-12 container lg:flex-row">
         <!-- Текст -->
         <div class="flex flex-col w-full justify-center lg:w-1/2">
