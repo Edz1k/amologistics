@@ -67,7 +67,7 @@ onMounted(() => {
         <ModalCallComponent />
         <a href="tel:+77474252583" class="text-gray-700 mt-2 flex items-center">
           <div class="i-mdi-phone text-xl text-green-500 mr-2" />
-          <span class="text-sm">+7 (747) 425-25-83</span>
+          <span class="text-sm">+7 (705) 124-59-88</span>
         </a>
       </div>
 
@@ -75,7 +75,7 @@ onMounted(() => {
       <div class="flex items-center space-x-4 md:hidden">
         <a href="tel:+77474252583" class="text-gray-700 flex items-center">
           <div class="i-mdi-whatsapp text-xl text-green-500 mr-2" />
-          <span class="text-sm">+7 (747) 425-25-83</span>
+          <span class="text-sm">+7 (705) 124-59-88</span>
         </a>
         <!-- Бургер -->
         <div

@@ -95,7 +95,7 @@ const cards = [
           </div>
           <div class="text-sm leading-tight text-left">
             <div class="text-xs text-gray-600">Связаться с нами</div>
-            <div class="text-black font-semibold">+7 (747) 425-25-83</div>
+            <div class="text-black font-semibold">+7 (705) 124-59-88</div>
           </div>
         </a>
       </div>

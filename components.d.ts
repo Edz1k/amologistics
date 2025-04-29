@@ -8,27 +8,16 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    AskPhoneCallComponent: typeof import('./src/components/AskPhoneCallComponent.vue')['default']
-    CallRequestButton: typeof import('./src/components/CallRequestButton.vue')['default']
-    CallRequestForm: typeof import('./src/components/CallRequestForm.vue')['default']
     CallRequestFormComponent: typeof import('./src/components/CallRequestFormComponent.vue')['default']
     CardFullComponent: typeof import('./src/components/CardFullComponent.vue')['default']
     DirectionMapComponent: typeof import('./src/components/DirectionMapComponent.vue')['default']
     FooterComponent: typeof import('./src/components/FooterComponent.vue')['default']
-    InputForm: typeof import('./src/components/InputForm.vue')['default']
     ModalCallComponent: typeof import('./src/components/ModalCallComponent.vue')['default']
     NavbarComponent: typeof import('./src/components/NavbarComponent.vue')['default']
-    NavigationComponent: typeof import('./src/components/NavigationComponent.vue')['default']
-    PhoneCompoent: typeof import('./src/components/PhoneCompoent.vue')['default']
     PhoneComponent: typeof import('./src/components/PhoneComponent.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     ServiceCardComponent: typeof import('./src/components/ServiceCardComponent.vue')['default']
-    StepperComponent: typeof import('./src/components/StepperComponent.vue')['default']
-    StepsComponent: typeof import('./src/components/StepsComponent.vue')['default']
-    TheCounter: typeof import('./src/components/TheCounter.vue')['default']
-    TheFooter: typeof import('./src/components/TheFooter.vue')['default']
-    TheInput: typeof import('./src/components/TheInput.vue')['default']
     WhatsAppComponent: typeof import('./src/components/WhatsAppComponent.vue')['default']
   }
 }
