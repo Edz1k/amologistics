@@ -14,8 +14,8 @@ const directions = ref([
   {
     label: 'Казахстан',
     flag: 'https://akorda.kz/assets/media/flag_mediumThumb.jpg',
-    x: 40.0,
-    y: 28.0,
+    x: 25.0,
+    y: 48.0,
   },
   {
     label: 'Eвропа',
@@ -26,14 +26,14 @@ const directions = ref([
   {
     label: 'Турция',
     flag: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/2560px-Flag_of_Turkey.svg.png',
-    x: 60.0,
+    x: 16.0,
     y: 28.0,
   },
   {
     label: 'Китай',
     flag: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/800px-Flag_of_the_People%27s_Republic_of_China.svg.png',
     x: 50.0,
-    y: 28.0,
+    y: 39.0,
   },
   // остальные страны...
 ])

@@ -19,6 +19,8 @@ declare module 'vue' {
     ModalCallComponent: typeof import('./src/components/ModalCallComponent.vue')['default']
     NavbarComponent: typeof import('./src/components/NavbarComponent.vue')['default']
     NavigationComponent: typeof import('./src/components/NavigationComponent.vue')['default']
+    PhoneCompoent: typeof import('./src/components/PhoneCompoent.vue')['default']
+    PhoneComponent: typeof import('./src/components/PhoneComponent.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     ServiceCardComponent: typeof import('./src/components/ServiceCardComponent.vue')['default']
@@ -27,5 +29,6 @@ declare module 'vue' {
     TheCounter: typeof import('./src/components/TheCounter.vue')['default']
     TheFooter: typeof import('./src/components/TheFooter.vue')['default']
     TheInput: typeof import('./src/components/TheInput.vue')['default']
+    WhatsAppComponent: typeof import('./src/components/WhatsAppComponent.vue')['default']
   }
 }

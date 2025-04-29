@@ -69,9 +69,9 @@ onMounted(() => {
 
       <!-- Мобильный блок -->
       <div class="flex items-center space-x-4 md:hidden">
-        <a href="tel:+77751442023" class="text-gray-700 flex items-center">
+        <a href="tel:+77474252583" class="text-gray-700 flex items-center">
           <div class="i-mdi-whatsapp text-xl text-green-500 mr-2" />
-          <span class="text-sm">+7 (775) 144-20-23</span>
+          <span class="text-sm">+7 (747) 425-25-83</span>
         </a>
         <!-- Бургер -->
         <div

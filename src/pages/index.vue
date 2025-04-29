@@ -66,21 +66,21 @@ const cards = [
       <p class="text-2xl text-white font-bold mt-2 text-center z-10">
         НАДЕЖНЫЙ ПОСТАВЩИК ТРАНСПОРТНЫХ УСЛУГ
       </p>
-      <div class="mx-auto px-4 py-15 flex flex-col items-start z-10 container md:items-start">
+      <div class="mx-auto px-4 py-15 flex flex-col items-start z-10 container lg:items-start">
         <!-- Декор -->
-        <div class="h-10 hidden relative md:block">
+        <div class="h-10 hidden relative lg:block">
           <div class="bg-red-500 h-2 w-[100px] absolute" />
           <div class="bg-red-500 h-[400px] w-2 absolute" />
           <div class="bg-red-500 h-2 w-[150px] top-100 absolute" />
         </div>
 
         <!-- Контент -->
-        <div class="text-white w-full md:w-[70%]">
-          <div class="text-xl leading-relaxed p-2 text-center rounded-2xl md:ml-10 md:text-left">
-            <h1 class="text-5xl font-bold mb-6">
+        <div class="text-white w-full lg:w-[70%]">
+          <div class="text-xl leading-relaxed p-2 text-left rounded-2xl md:ml-10">
+            <h1 class="text-4xl font-bold mb-6 text-center md:text-5xl lg:text-left">
               Международные грузоперевозки из Европы в Казахстан
             </h1>
-            <ul class="text-3xl font-bold pl-0 list-none space-y-3 md:pl-5">
+            <ul class="text-2xl font-bold pl-0 list-none space-y-3 md:text-3xl md:pl-5">
               <li>- Комплектные авто, контейнера, вагоны</li>
               <li>- Автоконсолидация (сборные грузы)</li>
               <li>- Негабаритные перевозки (тралы, вагоны)</li>
@@ -89,20 +89,20 @@ const cards = [
         </div>
 
         <!-- Кнопка звонка -->
-        <a href="tel:+77751442023" class="mt-30 px-4 py-2 rounded-full bg-white inline-flex w-[250px] shadow-lg items-center justify-center space-x-3">
+        <a href="tel:+77474252583" class="mt-30 px-4 py-2 rounded-full bg-white inline-flex w-[250px] shadow-lg items-center space-x-3">
           <div class="p-2 rounded-full bg-red-600">
             <div class="i-mdi:phone text-xl text-white" />
           </div>
-          <div class="text-sm leading-tight text-center">
+          <div class="text-sm leading-tight text-left">
             <div class="text-xs text-gray-600">Связаться с нами</div>
-            <div class="text-black font-semibold">+7 775 144 2023</div>
+            <div class="text-black font-semibold">+7 (747) 425-25-83</div>
           </div>
         </a>
       </div>
     </section>
 
     <!-- Почему выбирают нас -->
-    <section class="py-16">
+    <section id="about" class="py-16 scroll-mt-24">
       <div class="mx-auto text-center container">
         <h2 class="text-4xl font-bold mb-4">
           Почему выбирают нас
@@ -146,8 +146,8 @@ const cards = [
     </section>
 
     <!-- Что мы перевозим -->
-    <section class="py-16">
-      <div class="mx-auto flex flex-col gap-12 items-center container md:flex-row">
+    <section id="services" class="py-16 scroll-mt-24">
+      <div class="mx-auto flex flex-col gap-12 items-center container xl:flex-row">
         <!-- Карта -->
         <div class="flex w-full justify-center md:w-1/2">
           <DirectionMapComponent />
@@ -158,7 +158,7 @@ const cards = [
           <h2 class="text-4xl text-gray-900 font-bold mb-12 text-center md:text-left">
             Что мы перевозим
           </h2>
-          <ul class="gap-8 grid sm:grid-cols-2">
+          <ul class="gap-8 grid md:grid-cols-2">
             <li class="border border-gray-200 rounded-2xl bg-white flex flex-col shadow transition items-center overflow-hidden hover:shadow-lg">
               <img src="https://amologistics.kz/assets/images/gruz07.jpg" alt="Строительные материалы" class="h-40 w-full object-cover">
               <div class="p-6 text-center">
@@ -215,7 +215,7 @@ const cards = [
     </section>
 
     <!-- Надежность -->
-    <section class="py-16 bg-gray-50">
+    <section class="py-16 bg-gray-50 scroll-mt-24">
       <div class="mx-auto text-center container">
         <h2 class="text-4xl font-extrabold mb-6">
           С нами удобно и безопасно работать
@@ -238,7 +238,7 @@ const cards = [
     </section>
 
     <!-- Как мы работаем -->
-    <section id="about" class="py-25 bg-[url('https://t4.ftcdn.net/jpg/02/78/42/09/360_F_278420928_OEpFQsbKFJH40LH3RYIuPj4MO313M9Ea.jpg')] relative bg-cover bg-center bg-no-repeat scroll-mt-24">
+    <section class="py-25 bg-[url('https://t4.ftcdn.net/jpg/02/78/42/09/360_F_278420928_OEpFQsbKFJH40LH3RYIuPj4MO313M9Ea.jpg')] relative bg-cover bg-center bg-no-repeat">
       <div class="bg-black/50 inset-0 absolute z-0" />
       <div class="text-white mx-auto text-center relative z-10 container">
         <h2 class="text-5xl font-bold mb-20">

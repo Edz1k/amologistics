@@ -4,6 +4,8 @@ import Toast from 'primevue/toast'
 
 <template>
   <main font-sans>
+    <WhatsAppComponent />
+    <PhoneComponent />
     <Toast />
     <NavbarComponent />
     <RouterView />
