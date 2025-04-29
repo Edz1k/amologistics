@@ -15,9 +15,9 @@ const services = [
   { title: 'Страхование грузов', icon: 'shield-check' },
   { title: 'Помощь в таможенном оформлении', icon: 'file-certificate-outline' },
   { title: 'Складские услуги', icon: 'warehouse' },
-  { title: 'Проф. сопровождение менеджера на всех этапах', icon: 'warehouse' },
   { title: 'Проф. сопровождение менеджера на всех этапах', icon: 'account-tie' },
-  { title: 'Страхование грузов', icon: 'shield-check' },
+  { title: 'Поддержка 24/7', icon: 'headset' },
+  { title: 'Индивидуальный подход', icon: 'account-star-outline' },
 ]
 const cards = [
   {
@@ -126,13 +126,7 @@ const cards = [
     </section>
 
     <!-- Заказать консультацию -->
-    <section class="mt-10 py-16 bg-gray-50 flex items-center relative">
-      <img
-        src="/samolet.png"
-        alt=""
-        class="h-[200px] w-[200px] hidden left-0 top-90 absolute xl:block"
-      >
-
+    <section class="mt-10 py-16 bg-gray-50 flex items-center">
       <div class="mx-auto px-4 flex flex-col gap-12 container lg:flex-row">
         <!-- Текст -->
         <div class="flex flex-col w-full justify-center lg:w-1/2">
@@ -165,49 +159,49 @@ const cards = [
             Что мы перевозим
           </h2>
           <ul class="gap-8 grid md:grid-cols-2">
-            <li class="border border-gray-200 rounded-2xl bg-white flex flex-col shadow transition items-center overflow-hidden hover:shadow-lg">
-              <img src="https://amologistics.kz/assets/images/gruz07.jpg" alt="Строительные материалы" class="h-40 w-full object-cover">
+            <li class="border border-red-500 rounded-2xl bg-white flex flex-col shadow transition items-center overflow-hidden hover:shadow-lg">
+              <img src="/images/1.png" alt="Строительные материалы" class="h-40 w-full object-cover grayscale">
               <div class="p-6 text-center">
                 <span class="text-lg text-gray-800 font-semibold block">
                   Строительные материалы
                 </span>
               </div>
             </li>
-            <li class="border border-gray-200 rounded-2xl bg-white flex flex-col shadow transition items-center overflow-hidden hover:shadow-lg">
-              <img src="https://amologistics.kz/assets/images/gruz01.jpg" alt="Оборудование и запчасти" class="h-40 w-full object-cover">
+            <li class="border border-red-500 rounded-2xl bg-white flex flex-col shadow transition items-center overflow-hidden hover:shadow-lg">
+              <img src="/images/2.png" alt="Оборудование и запчасти" class="h-40 w-full object-cover grayscale">
               <div class="p-6 text-center">
                 <span class="text-lg text-gray-800 font-semibold block">
                   Оборудование и запчасти
                 </span>
               </div>
             </li>
-            <li class="border border-gray-200 rounded-2xl bg-white flex flex-col shadow transition items-center overflow-hidden hover:shadow-lg">
-              <img src="https://amologistics.kz/assets/images/gruz04.jpg" alt="Товары народного потребления" class="h-40 w-full object-cover">
+            <li class="border border-red-500 rounded-2xl bg-white flex flex-col shadow transition items-center overflow-hidden hover:shadow-lg">
+              <img src="/images/3.png" alt="Товары народного потребления" class="h-40 w-full object-cover grayscale">
               <div class="p-6 text-center">
                 <span class="text-lg text-gray-800 font-semibold block">
                   Товары народного потребления
                 </span>
               </div>
             </li>
-            <li class="border border-gray-200 rounded-2xl bg-white flex flex-col shadow transition items-center overflow-hidden hover:shadow-lg">
-              <img src="https://img.belta.by/images/storage/news/with_archive/2020/000026_1597637750_403060_big.jpg" alt="Опасные вещества" class="h-40 w-full object-cover">
+            <li class="border border-red-500 rounded-2xl bg-white flex flex-col shadow transition items-center overflow-hidden hover:shadow-lg">
+              <img src="https://img.belta.by/images/storage/news/with_archive/2020/000026_1597637750_403060_big.jpg" alt="Опасные вещества" class="h-40 w-full object-cover grayscale">
               <div class="p-6 text-center">
                 <span class="text-lg text-gray-800 font-semibold block">
                   Опасные вещества
                 </span>
               </div>
             </li>
-            <li class="border border-gray-200 rounded-2xl bg-white flex flex-col shadow transition items-center overflow-hidden hover:shadow-lg">
-              <img src="https://amologistics.kz/assets/images/gruz04.jpg" alt="Продукты питания" class="h-40 w-full object-cover object-center">
+            <li class="border border-red-500 rounded-2xl bg-white flex flex-col shadow transition items-center overflow-hidden hover:shadow-lg">
+              <img src="/images/4.png" alt="Продукты питания" class="h-40 w-full object-cover object-center grayscale">
               <div class="p-6 text-center">
                 <span class="text-lg text-gray-800 font-semibold block">
                   Продукты питания
                 </span>
               </div>
             </li>
-            <li class="p-6 text-center border border-gray-200 rounded-2xl bg-white flex flex-col shadow transition-all items-center overflow-hidden hover:shadow-lg">
+            <li class="p-6 text-center border border-red-500 rounded-2xl bg-white flex flex-col shadow transition-all items-center overflow-hidden hover:shadow-lg">
               <div class="flex h-30 w-full items-center justify-center">
-                <div class="i-mdi-dots-horizontal text-4xl text-red-500" />
+                <div class="greyscale i-mdi-dots-horizontal text-4xl" />
               </div>
               <div class="p-6 text-center">
                 <span class="text-lg text-gray-800 font-semibold block">

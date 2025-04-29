@@ -41,7 +41,7 @@ const directions = ref([
 
 <template>
   <div class="w-full relative">
-    <img src="/11383065.png" alt="" loading="lazy" class="w-full">
+    <img src="/11383065.png" alt="" class="w-full">
     <div
       v-for="(d, i) in directions"
       :key="i"

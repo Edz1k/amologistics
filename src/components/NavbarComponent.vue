@@ -45,8 +45,8 @@ onMounted(() => {
     <div class="mx-auto px-4 py-1 flex items-center justify-between container">
       <!-- Логотип -->
       <a href="/" class="flex items-center">
-        <div class="p-2 rounded bg-red-500">
-          <img src="/logo.png" alt="Logo" class="h-20 w-auto">
+        <div class="p-2 rounded bg-red-500 overflow-hidden">
+          <img src="/logo.png" alt="Logo" class="h-20 w-auto scale-140 transform object-cover">
         </div>
       </a>
 
@@ -65,6 +65,10 @@ onMounted(() => {
       <!-- Десктоп-кнопка -->
       <div class="hidden md:block">
         <ModalCallComponent />
+        <a href="tel:+77474252583" class="text-gray-700 mt-2 flex items-center">
+          <div class="i-mdi-phone text-xl text-green-500 mr-2" />
+          <span class="text-sm">+7 (747) 425-25-83</span>
+        </a>
       </div>
 
       <!-- Мобильный блок -->

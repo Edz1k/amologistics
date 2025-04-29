@@ -16,6 +16,8 @@ export default defineConfig({
     'i-mdi-file-certificate-outline',
     'i-mdi-warehouse',
     'i-mdi-account-tie',
+    'i-mdi-headset',
+    'i-mdi-account-star-outline',
   ],
   presets: [
     presetWind4(),
