@@ -182,7 +182,7 @@ const cards = [
               </div>
             </li>
             <li class="border border-gray-200 rounded-2xl bg-white flex flex-col shadow transition items-center overflow-hidden hover:shadow-lg">
-              <img src="https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-02c4-622f-81c9-4493d294b66b/raw?se=2025-04-28T18%3A51%3A21Z&sp=r&sv=2024-08-04&sr=b&scid=82d3d70f-1199-55cb-8d6f-b3f437ce5860&skoid=de76bc29-7017-43d4-8d90-7a49512bae0f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-27T21%3A03%3A04Z&ske=2025-04-28T21%3A03%3A04Z&sks=b&skv=2024-08-04&sig=fbJZxEvt6jObq2/T2fuanULtRNNFosNldrIShBBcN%2B8%3D" alt="Товары народного потребления" class="h-40 w-full object-cover">
+              <img src="https://amologistics.kz/assets/images/gruz04.jpg" alt="Товары народного потребления" class="h-40 w-full object-cover">
               <div class="p-6 text-center">
                 <span class="text-lg text-gray-800 font-semibold block">
                   Товары народного потребления
@@ -198,7 +198,7 @@ const cards = [
               </div>
             </li>
             <li class="border border-gray-200 rounded-2xl bg-white flex flex-col shadow transition items-center overflow-hidden hover:shadow-lg">
-              <img src="https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-3c44-622f-8f35-27d4de22888f/raw?se=2025-04-28T19%3A34%3A58Z&sp=r&sv=2024-08-04&sr=b&scid=6043e37a-1dad-55a2-80be-82b4159c7654&skoid=de76bc29-7017-43d4-8d90-7a49512bae0f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-27T21%3A03%3A00Z&ske=2025-04-28T21%3A03%3A00Z&sks=b&skv=2024-08-04&sig=jNOIbi09sUPyGvpP0uK9vFNTT7d5Zf3vB6cAG6cR%2B%2BE%3D" alt="Продукты питания" class="h-40 w-full object-cover object-center">
+              <img src="https://amologistics.kz/assets/images/gruz04.jpg" alt="Продукты питания" class="h-40 w-full object-cover object-center">
               <div class="p-6 text-center">
                 <span class="text-lg text-gray-800 font-semibold block">
                   Продукты питания
