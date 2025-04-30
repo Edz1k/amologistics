@@ -4,6 +4,7 @@ import CallRequestFormComponent from '~/components/CallRequestFormComponent.vue'
 defineOptions({
   name: 'IndexPage',
 })
+
 const steps = [
   { id: '01', label: 'Вы обращаетесь за просчетом стоимости доставки' },
   { id: '02', label: 'Наши специалисты производят расчет и подбирают оптимальный маршрут' },
