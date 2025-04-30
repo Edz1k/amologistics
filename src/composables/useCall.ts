@@ -9,7 +9,7 @@ export function useUser() {
     xhr.responseType = 'json'
 
     const requestList = JSON.stringify({
-      chat_id: '@akeramzit',
+      chat_id: '@amologistik',
       text: `Имя клиента: ${name}\nНомер телефона: ${phoneNumber}`,
     })
     if (name && phoneNumber) {
