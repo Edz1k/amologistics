@@ -199,13 +199,11 @@ const cards = [
                 </span>
               </div>
             </li>
-            <li class="p-6 text-center border border-red-500 rounded-2xl bg-white flex flex-col shadow transition-all items-center overflow-hidden hover:shadow-lg">
-              <div class="flex h-30 w-full items-center justify-center">
-                <div class="greyscale i-mdi-dots-horizontal text-4xl" />
-              </div>
+            <li class="border border-red-500 rounded-2xl bg-white flex flex-col shadow transition items-center overflow-hidden hover:shadow-lg">
+              <img src="/images/5.png" alt="Продукты питания" class="h-40 w-full object-cover object-center grayscale">
               <div class="p-6 text-center">
                 <span class="text-lg text-gray-800 font-semibold block">
-                  И многое другое…
+                  Негабаритные грузы
                 </span>
               </div>
             </li>
