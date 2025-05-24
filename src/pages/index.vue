@@ -77,27 +77,43 @@ const cards = [
         <!-- Контент -->
         <div class="text-white w-full lg:w-[70%]">
           <div class="text-xl leading-relaxed p-2 text-left rounded-2xl md:ml-10">
-            <h1 class="text-4xl font-bold mb-6 text-center md:text-5xl lg:text-left">
-              Международные грузоперевозки из Европы в Казахстан
-            </h1>
-            <ul class="text-2xl font-bold pl-0 list-none space-y-3 md:text-3xl md:pl-5">
-              <li>- Комплектные авто, контейнера, вагоны</li>
-              <li>- Автоконсолидация (сборные грузы)</li>
-              <li>- Негабаритные перевозки (тралы, вагоны)</li>
-            </ul>
-          </div>
-        </div>
+            <div>
+              <h1 class="text-4xl font-bold mb-2 text-center md:text-5xl">
+                Международные грузоперевозки
+              </h1>
 
-        <!-- Кнопка звонка -->
-        <a href="tel:+77474252583" class="mt-30 px-4 py-2 rounded-full bg-white inline-flex w-[250px] shadow-lg items-center space-x-3">
-          <div class="p-2 rounded-full bg-red-600">
-            <div class="i-mdi:phone text-xl text-white" />
+              <div class="mt-2 text-center space-y-2 md:mt-4">
+                <div class="text-xl font-bold flex gap-2 items-center justify-center md:text-3xl sm:text-2xl">
+                  <span>из Европы</span>
+                  <div class="i-mdi:arrow-right" />
+                  <span>в Казахстан</span>
+                </div>
+                <div class="text-xl font-bold pl-3 flex gap-2 items-center justify-center md:text-3xl sm:text-2xl">
+                  <span>Россия</span>
+                  <div class="i-mdi:swap-horizontal" />
+                  <span>Казахстан</span>
+                </div>
+              </div>
+
+              <ul class="text-2xl font-bold mt-2 pl-0 list-none space-y-3 md:text-3xl md:pl-5">
+                <li>- Комплектные авто, контейнера, вагоны</li>
+                <li>- Автоконсолидация (сборные грузы)</li>
+                <li>- Негабаритные перевозки (тралы, вагоны)</li>
+              </ul>
+            </div>
           </div>
-          <div class="text-sm leading-tight text-left">
-            <div class="text-xs text-gray-600">Связаться с нами</div>
-            <div class="text-black font-semibold">+7 (705) 124-59-88</div>
-          </div>
-        </a>
+
+          <!-- Кнопка звонка -->
+          <a href="tel:+77474252583" class="mt-30 px-4 py-2 rounded-full bg-white inline-flex w-[250px] shadow-lg items-center space-x-3">
+            <div class="p-2 rounded-full bg-red-600">
+              <div class="i-mdi:phone text-xl text-white" />
+            </div>
+            <div class="text-sm leading-tight text-left">
+              <div class="text-xs text-gray-600">Связаться с нами</div>
+              <div class="text-black font-semibold">+7 (705) 124-59-88</div>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
 
