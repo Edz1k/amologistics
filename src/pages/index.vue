@@ -95,7 +95,7 @@ const cards = [
                 </div>
               </div>
 
-              <ul class="text-2xl font-bold mt-2 pl-0 list-none space-y-3 md:text-3xl md:pl-5">
+              <ul class="text-2xl font-500 mt-2 pl-0 list-none space-y-3 md:text-3xl md:pl-5">
                 <li>- Комплектные авто, контейнера, вагоны</li>
                 <li>- Автоконсолидация (сборные грузы)</li>
                 <li>- Негабаритные перевозки (тралы, вагоны)</li>
