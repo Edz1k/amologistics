@@ -1,9 +1,36 @@
-<script setup lang="ts" generic="T extends any, O extends any">
+<script setup lang="ts">
+import { ref, watch } from 'vue'
+import evrodostavkaImage from '~/assets/images/evrodostavka.jpg'
+import konsolidaciyaImage from '~/assets/images/konsolidaciya.jpg'
+
+import negabaritImage from '~/assets/images/negabarit.jpg'
+import pereezdyImage from '~/assets/images/pereezdy.jpg'
 import CallRequestFormComponent from '~/components/CallRequestFormComponent.vue'
+import { useHeroState } from '~/composables/useHeroState'
 
 defineOptions({
   name: 'IndexPage',
 })
+
+const { activeServiceKey, currentContent } = useHeroState()
+
+const defaultExternalImage = 'https://wallpapers.com/images/featured/cool-trucks-cdvn4ttk7o8geggz.jpg'
+const heroBackgroundImages: Record<string, string> = {
+  'default': defaultExternalImage,
+  'relocation': pereezdyImage,
+  'consolidation': konsolidaciyaImage,
+  'euro-delivery': evrodostavkaImage,
+  'oversize': negabaritImage,
+}
+
+const showHeroDecor = ref(true)
+const currentHeroBackgroundImage = ref(defaultExternalImage)
+
+watch(activeServiceKey, (newKey) => {
+  currentHeroBackgroundImage.value = heroBackgroundImages[newKey] || defaultExternalImage
+  showHeroDecor.value = (newKey === 'default')
+}, { immediate: true })
+
 const steps = [
   { id: '01', label: 'Вы обращаетесь за просчетом стоимости доставки' },
   { id: '02', label: 'Наши специалисты производят расчет и подбирают оптимальный маршрут' },
@@ -60,51 +87,50 @@ const cards = [
 
 <template>
   <main>
-    <!-- Hero секция -->
-    <section class="bg-[url('https://wallpapers.com/images/featured/cool-trucks-cdvn4ttk7o8geggz.jpg')] bg-gray-100 flex flex-col justify-center relative overflow-hidden bg-cover bg-center bg-no-repeat">
+    <section
+      id="hero-section"
+      class="transition-background-image bg-gray-100 flex flex-col duration-500 ease-in-out justify-center relative overflow-hidden bg-cover bg-center bg-no-repeat"
+      :style="{ backgroundImage: `url(${currentHeroBackgroundImage})` }"
+      style="min-height: 100vh;"
+    >
       <div class="bg-black/50 inset-0 absolute z-0" />
       <p class="text-2xl text-white font-bold mt-2 text-center z-10">
         НАДЕЖНЫЙ ПОСТАВЩИК ТРАНСПОРТНЫХ УСЛУГ
       </p>
       <div class="mx-auto px-4 py-15 flex flex-col items-start z-10 container lg:items-start">
-        <!-- Декор -->
-        <div class="h-10 hidden relative lg:block">
-          <div class="bg-red-500 h-2 w-[100px] absolute" />
-          <div class="bg-red-500 h-[400px] w-2 absolute" />
-          <div class="bg-red-500 h-2 w-[150px] top-100 absolute" />
-        </div>
+        <Transition name="fade-decor">
+          <div v-if="showHeroDecor" class="h-10 hidden relative lg:block">
+            <div class="bg-red-500 h-2 w-[100px] absolute" />
+            <div class="bg-red-500 h-[400px] w-2 absolute" />
+            <div class="bg-red-500 h-2 w-[150px] top-100 absolute" />
+          </div>
+        </Transition>
 
-        <!-- Контент -->
         <div class="text-white w-full lg:w-[70%]">
           <div class="text-xl leading-relaxed p-2 text-left rounded-2xl md:ml-10">
-            <div>
+            <div :key="activeServiceKey" class="transition-opacity duration-300">
               <h1 class="text-4xl font-bold mb-2 text-center md:text-5xl">
-                Международные грузоперевозки
+                {{ currentContent.title }}
               </h1>
 
               <div class="mt-2 text-center space-y-2 md:mt-4">
-                <div class="text-xl font-bold flex gap-2 items-center justify-center md:text-3xl sm:text-2xl">
-                  <span>из Европы</span>
+                <div v-for="(subtitle, index) in currentContent.subtitles" :key="index" class="text-xl font-bold flex gap-2 items-center justify-center md:text-3xl sm:text-2xl">
+                  <span>{{ subtitle.text1 }}</span>
                   <div class="i-mdi:arrow-right" />
-                  <span>в Казахстан</span>
-                </div>
-                <div class="text-xl font-bold pl-3 flex gap-2 items-center justify-center md:text-3xl sm:text-2xl">
-                  <span>Россия</span>
-                  <div class="i-mdi:swap-horizontal" />
-                  <span>Казахстан</span>
+                  <div v-if="subtitle.icon" :class="subtitle.icon" />
+                  <span v-if="subtitle.text2">{{ subtitle.text2 }}</span>
                 </div>
               </div>
 
               <ul class="text-2xl font-500 mt-2 pl-0 list-none space-y-3 md:text-3xl md:pl-5">
-                <li>- Комплектные авто, контейнера, вагоны</li>
-                <li>- Автоконсолидация (сборные грузы)</li>
-                <li>- Негабаритные перевозки (тралы, вагоны)</li>
+                <li v-for="(item, index) in currentContent.list" :key="index">
+                  {{ item }}
+                </li>
               </ul>
             </div>
           </div>
 
-          <!-- Кнопка звонка -->
-          <a href="tel:+77474252583" class="mt-30 px-4 py-2 rounded-full bg-white inline-flex w-[250px] shadow-lg items-center space-x-3">
+          <a href="tel:+77051245988" class="mt-30 px-4 py-2 rounded-full bg-white inline-flex w-[250px] shadow-lg items-center space-x-3">
             <div class="p-2 rounded-full bg-red-600">
               <div class="i-mdi:phone text-xl text-white" />
             </div>
@@ -117,7 +143,6 @@ const cards = [
       </div>
     </section>
 
-    <!-- Почему выбирают нас -->
     <section id="about" class="py-16 scroll-mt-24">
       <div class="mx-auto text-center container">
         <h2 class="text-4xl font-bold mb-4">
@@ -141,10 +166,8 @@ const cards = [
       </div>
     </section>
 
-    <!-- Заказать консультацию -->
     <section class="mt-10 py-16 bg-gray-50 flex items-center">
       <div class="mx-auto px-4 flex flex-col gap-12 container lg:flex-row">
-        <!-- Текст -->
         <div class="flex flex-col w-full justify-center lg:w-1/2">
           <h2 class="text-4xl text-gray-900 font-bold md:text-6xl">
             Мы предоставляем полный спектр транспортных услуг
@@ -154,22 +177,18 @@ const cards = [
           </p>
         </div>
 
-        <!-- Форма -->
         <div class="w-full lg:w-1/2">
           <CallRequestFormComponent />
         </div>
       </div>
     </section>
 
-    <!-- Что мы перевозим -->
     <section id="services" class="py-16 scroll-mt-24">
       <div class="mx-auto flex flex-col gap-12 items-center container xl:flex-row">
-        <!-- Карта -->
         <div class="flex w-full justify-center md:w-1/2">
           <DirectionMapComponent />
         </div>
 
-        <!-- Список -->
         <div class="w-full md:w-1/2">
           <h2 class="text-4xl text-gray-900 font-bold mb-12 text-center md:text-left">
             Что мы перевозим
@@ -228,7 +247,6 @@ const cards = [
       </div>
     </section>
 
-    <!-- Надежность -->
     <section class="py-16 bg-gray-50 scroll-mt-24">
       <div class="mx-auto text-center container">
         <h2 class="text-4xl font-extrabold mb-6">
@@ -251,7 +269,6 @@ const cards = [
       </div>
     </section>
 
-    <!-- Как мы работаем -->
     <section class="py-25 bg-[url('https://t4.ftcdn.net/jpg/02/78/42/09/360_F_278420928_OEpFQsbKFJH40LH3RYIuPj4MO313M9Ea.jpg')] relative bg-cover bg-center bg-no-repeat">
       <div class="bg-black/50 inset-0 absolute z-0" />
       <div class="text-white mx-auto text-center relative z-10 container">
@@ -272,3 +289,18 @@ const cards = [
     </section>
   </main>
 </template>
+
+<style scoped>
+.transition-background-image {
+  transition: background-image 0.5s ease-in-out;
+}
+
+.fade-decor-enter-active,
+.fade-decor-leave-active {
+  transition: opacity 0.5s ease;
+}
+.fade-decor-enter-from,
+.fade-decor-leave-to {
+  opacity: 0;
+}
+</style>

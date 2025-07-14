@@ -1,4 +1,5 @@
 import Aura from '@primeuix/themes/material'
+import { TieredMenu } from 'primevue'
 import PrimeVue from 'primevue/config'
 import ToastService from 'primevue/toastservice'
 import { createApp } from 'vue'
@@ -15,6 +16,8 @@ const router = createRouter({
 })
 app.use(router)
 app.use(ToastService)
+app.component('TiredMenu', TieredMenu)
+
 app.use(PrimeVue, {
   theme: {
     preset: Aura,
