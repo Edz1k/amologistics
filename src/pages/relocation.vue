@@ -9,7 +9,7 @@ defineOptions({
 const heroContent = {
   subtitleTop: 'Перевозка личных вещей из Казахстана в Россию',
   image: '/images/relocation-hero.jpg',
-  heroText: '',
+  heroText: 'Переезд квартир, домов офисов',
   heroSubtitle: [],
   subtitleBottom: [
     '- Быстрая подача авто',
