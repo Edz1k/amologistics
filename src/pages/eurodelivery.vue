@@ -10,14 +10,15 @@ defineOptions({
 
 // --- Данные для Hero секции этой страницы ---
 const heroContent = {
-  subtitleTop: 'БЫСТРАЯ ДОСТАВКА ИЗ ЕВРОПЫ',
+  subtitleTop: 'Доставка сборных грузов из Европы в Казахстан для юридических лиц.',
   image: '/images/euro-delivery-hero.jpg',
-  heroText: 'Доставка грузов из любой точки Европы',
-  heroSubtitle: ['Полное сопровождение', 'Таможенная очистка'],
+  heroText: 'Логистика и таможенное оформление.',
+  heroSubtitle: [],
   subtitleBottom: [
-    '- От двери до двери',
-    '- Любые объемы и веса',
-    '- Сертификация и документация',
+    '- Организация забора груза у поставщика в любой точке ЕС в течении 24-48 часов– от 1 паллеты',
+    '- Комплектация груза на складе (3-4дня) и отправка автомашины в Казахстан',
+    '- Помощь в таможенном оформлении',
+    '- Гарантия сохранности',
   ],
 }
 
@@ -62,8 +63,8 @@ const cards = [
       <div class="mx-auto px-4 py-15 flex flex-col items-start z-10 container lg:items-start">
         <div class="h-10 hidden relative lg:block">
           <div class="bg-red-500 h-2 w-[100px] absolute" />
-          <div class="bg-red-500 h-[400px] w-2 absolute" />
-          <div class="bg-red-500 h-2 w-[150px] top-100 absolute" />
+          <div class="bg-red-500 h-[420px] w-2 absolute" />
+          <div class="bg-red-500 h-2 w-[150px] top-105 absolute" />
         </div>
 
         <div class="text-white w-full lg:w-[70%]">

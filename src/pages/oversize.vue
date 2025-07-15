@@ -9,14 +9,15 @@ defineOptions({
 
 // --- Данные для Hero секции этой страницы ---
 const heroContent = {
-  subtitleTop: 'ПЕРЕВОЗКА НЕСТАНДАРТНЫХ ГРУЗОВ',
+  subtitleTop: 'Доставка негабаритных и тяжеловесных грузов из Европы в Казахстан – автомобильным и железнодорожным путем.',
   image: '/images/oversize-hero.jpg',
-  heroText: 'Транспортировка крупногабаритных и тяжеловесных грузов',
-  heroSubtitle: ['Спецтехника', 'Опытные водители'],
+  heroText: 'Открытые площадки, низкорамные тралы, модульные тралы и специализированные ж/д палтформы.',
+  heroSubtitle: [],
   subtitleBottom: [
-    '- Разработка индивидуальных маршрутов',
-    '- Получение всех разрешений',
-    '- Сопровождение и безопасность',
+    '-Таможенное оформление',
+    '- Оформление специальных разрешений на согласованный маршрут следования',
+    '- Страхование и сопровождение груза',
+    '- Отсутствие ограничений на вес и обьем',
   ],
 }
 
@@ -61,8 +62,8 @@ const cards = [
       <div class="mx-auto px-4 py-15 flex flex-col items-start z-10 container lg:items-start">
         <div class="h-10 hidden relative lg:block">
           <div class="bg-red-500 h-2 w-[100px] absolute" />
-          <div class="bg-red-500 h-[400px] w-2 absolute" />
-          <div class="bg-red-500 h-2 w-[150px] top-100 absolute" />
+          <div class="bg-red-500 h-[480px] w-2 absolute" />
+          <div class="bg-red-500 h-2 w-[150px] top-120 absolute" />
         </div>
 
         <div class="text-white w-full lg:w-[70%]">

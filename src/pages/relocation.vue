@@ -7,14 +7,14 @@ defineOptions({
   name: 'RelocationPage',
 })
 const heroContent = {
-  subtitleTop: 'УСЛУГИ ПО ПЕРЕЕЗДАМ',
+  subtitleTop: 'Перевозка личных вещей из Казахстана в Россию',
   image: '/images/relocation-hero.jpg',
-  heroText: 'Профессиональные переезды любой сложности',
-  heroSubtitle: ['Квартирные', 'Офисные', 'Промышленные'],
+  heroText: '',
+  heroSubtitle: [],
   subtitleBottom: [
-    '- Упаковка и разборка мебели',
-    '- Аккуратная погрузка и разгрузка',
-    '- Доставка точно в срок',
+    '- Быстрая подача авто',
+    '- Помощь в оформлении сопроводительных документов',
+    '- Гарантия Сохранности',
   ],
 }
 
@@ -57,8 +57,8 @@ const cards = [
       <div class="mx-auto px-4 py-15 flex flex-col items-start z-10 container lg:items-start">
         <div class="h-10 hidden relative lg:block">
           <div class="bg-red-500 h-2 w-[100px] absolute" />
-          <div class="bg-red-500 h-[400px] w-2 absolute" />
-          <div class="bg-red-500 h-2 w-[150px] top-100 absolute" />
+          <div class="bg-red-500 h-[280px] w-2 absolute" />
+          <div class="bg-red-500 h-2 w-[150px] top-70 absolute" />
         </div>
 
         <div class="text-white w-full lg:w-[70%]">
