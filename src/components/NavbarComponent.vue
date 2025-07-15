@@ -20,10 +20,10 @@ const navItems = ref<NavItem[]>([
     name: 'Сервисы',
     icon: 'mdi:chevron-down',
     items: [
-      { name: 'Переезды', icon: 'mdi:truck-fast', to: '/relocation' },
-      { name: 'Консолидация', icon: 'mdi:warehouse', to: '/consolidation' },
-      { name: 'Евро Доставка', icon: 'mdi:earth', to: '/eurodelivery' },
-      { name: 'Негабарит', icon: 'mdi:truck-outline', to: '/oversize' },
+      { name: 'Релокация', icon: 'mdi:truck-fast', to: '/relocation' },
+      { name: 'Сборка', icon: 'mdi:warehouse', to: '/consolidation' },
+      { name: 'Импорт', icon: 'mdi:earth', to: '/eurodelivery' },
+      { name: 'Спецгрузы', icon: 'mdi:truck-outline', to: '/oversize' },
     ],
   },
 ])

@@ -63,14 +63,14 @@ const cards = [
       <div class="mx-auto px-4 py-15 flex flex-col items-start z-10 container lg:items-start">
         <div class="h-10 hidden relative lg:block">
           <div class="bg-red-500 h-2 w-[100px] absolute" />
-          <div class="bg-red-500 h-[420px] w-2 absolute" />
-          <div class="bg-red-500 h-2 w-[150px] top-105 absolute" />
+          <div class="bg-red-500 h-[500px] w-2 absolute" />
+          <div class="bg-red-500 h-2 w-[150px] top-125 absolute" />
         </div>
 
         <div class="text-white w-full lg:w-[70%]">
           <div class="text-xl leading-relaxed p-2 text-left rounded-2xl md:ml-10">
             <div>
-              <h1 class="text-4xl font-bold mb-2 text-center md:text-5xl">
+              <h1 class="text-4xl font-bold my-4 text-start md:text-5xl">
                 {{ heroContent.heroText }}
               </h1>
 

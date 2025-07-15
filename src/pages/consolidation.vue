@@ -12,6 +12,7 @@ const heroContent = {
   image: '/images/consolidation-hero.jpg', // Изображение для консолидации
   heroText: 'Москва/Санкт-Петербург/Екатеринбург/Новосибирск',
   heroSubtitle: ['Забор груза у поставщика, консолидация на складе или отправка прямой авто, оформление документов и доставка в Казахстан.'],
+  title: ' Отправка грузов от 50 кг',
   subtitleBottom: [
     '- Объединение мелких партий',
     '- Оптимизация маршрутов',
@@ -60,8 +61,8 @@ const cards = [
       <div class="mx-auto px-4 py-15 flex flex-col items-start z-10 container lg:items-start">
         <div class="h-10 hidden relative lg:block">
           <div class="bg-red-500 h-2 w-[100px] absolute" />
-          <div class="bg-red-500 h-[430px] w-2 absolute" />
-          <div class="bg-red-500 h-2 w-[150px] top-106 absolute" />
+          <div class="bg-red-500 h-[500px] w-2 absolute" />
+          <div class="bg-red-500 h-2 w-[150px] top-125 absolute" />
         </div>
 
         <div class="text-white w-full lg:w-[70%]">
@@ -71,7 +72,7 @@ const cards = [
                 {{ heroContent.heroText }}
               </h1>
 
-              <div v-if="heroContent.heroSubtitle && heroContent.heroSubtitle.length > 0" class="mt-2 text-center space-y-2 md:mt-4">
+              <div v-if="heroContent.heroSubtitle && heroContent.heroSubtitle.length > 0" class="mt-2 text-start space-y-2 md:mt-4">
                 <div v-if="heroContent.heroSubtitle.length === 4" class="text-xl font-bold flex gap-2 items-center justify-center md:text-3xl sm:text-2xl">
                   <span>{{ heroContent.heroSubtitle[0] }}</span>
                   <div class="i-mdi:arrow-right" />
@@ -89,7 +90,9 @@ const cards = [
                   </span>
                 </div>
               </div>
-
+              <div class="text-2xl font-600 my-5 text-start md:text-4xl">
+                {{ heroContent.title }}
+              </div>
               <ul v-if="heroContent.subtitleBottom && heroContent.subtitleBottom.length > 0" class="text-2xl font-500 mt-2 pl-0 list-none space-y-3 md:text-3xl md:pl-5">
                 <li v-for="(item, idx) in heroContent.subtitleBottom" :key="idx">
                   {{ item }}
