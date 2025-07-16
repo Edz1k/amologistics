@@ -8,9 +8,9 @@ defineOptions({
 })
 // --- Данные для Hero секции этой страницы ---
 const heroContent = {
-  subtitleTop: 'Консолидация грузов из России – Казахстан.',
+  subtitleTop: 'Москва/Санкт-Петербург/Екатеринбург/Новосибирск',
   image: '/images/consolidation-hero.jpg', // Изображение для консолидации
-  heroText: 'Москва/Санкт-Петербург/Екатеринбург/Новосибирск',
+  heroText: 'Консолидация грузов из России в Казахстан.',
   heroSubtitle: ['Забор груза у поставщика, консолидация на складе или отправка прямого авто, оформление документов и доставка в Казахстан.'],
   title: ' Отправка грузов от 50 кг',
   subtitleBottom: [
@@ -65,32 +65,32 @@ const cards = [
         <div class="text-white w-full lg:w-[70%]">
           <div class="text-xl leading-relaxed p-2 text-left rounded-2xl md:ml-10">
             <div>
-              <h1 class="text-4xl font-bold mb-2 text-center md:text-5xl">
+              <h1 class="text-4xl font-bold mb-10 text-center md:text-5xl">
                 {{ heroContent.heroText }}
               </h1>
 
               <div v-if="heroContent.heroSubtitle && heroContent.heroSubtitle.length > 0" class="mt-2 text-start space-y-2 md:mt-4">
-                <div v-if="heroContent.heroSubtitle.length === 4" class="text-xl font-bold flex gap-2 items-center justify-center md:text-3xl sm:text-2xl">
+                <div v-if="heroContent.heroSubtitle.length === 4" class="text-xl font-bold flex gap-2 items-center justify-center md:text-xl">
                   <span>{{ heroContent.heroSubtitle[0] }}</span>
                   <div class="i-mdi:arrow-right" />
                   <span>{{ heroContent.heroSubtitle[1] }}</span>
                 </div>
-                <div v-if="heroContent.heroSubtitle.length === 4" class="text-xl font-bold pl-3 flex gap-2 items-center justify-center md:text-3xl sm:text-2xl">
+                <div v-if="heroContent.heroSubtitle.length === 4" class="text-xl font-bold pl-3 flex gap-2 items-center justify-center md:text-xl">
                   <span>{{ heroContent.heroSubtitle[2] }}</span>
                   <div class="i-mdi:swap-horizontal" />
                   <span>{{ heroContent.heroSubtitle[3] }}</span>
                 </div>
-                <div v-else class="text-xl font-bold flex gap-2 items-center justify-center md:text-3xl sm:text-2xl">
+                <div v-else class="text-xl font-bold flex gap-2 items-center justify-center md:text-xl">
                   <span v-for="(sub, i) in heroContent.heroSubtitle" :key="i">
                     {{ sub }}
                     <template v-if="i < heroContent.heroSubtitle.length - 1">, </template>
                   </span>
                 </div>
               </div>
-              <div class="text-2xl font-600 my-5 text-start md:text-4xl">
+              <div class="font-600 my-5 text-start md:text-xl">
                 {{ heroContent.subtitleTop }}
               </div>
-              <div class="test-start text-xl font-500 md:text-2xl">
+              <div class="test-start font-500 md:text-xl">
                 {{ heroContent.title }}
               </div>
               <ul v-if="heroContent.subtitleBottom && heroContent.subtitleBottom.length > 0" class="text-lg font-400 mt-2 pl-0 list-none space-y-3 md:text-xl md:pl-5">
