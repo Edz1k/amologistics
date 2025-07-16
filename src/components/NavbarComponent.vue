@@ -112,16 +112,16 @@ onUnmounted(() => {
       <div class="hidden md:block">
         <ModalCallComponent />
 
-        <a href="tel:+77751442023" class="text-gray-700 mt-2 flex items-center">
+        <a href="tel:+77051245988" class="text-gray-700 mt-2 flex items-center">
           <div class="i-mdi:phone text-xl text-green-500 mr-2" />
-          <span class="text-sm">+7 (775) 144-20-23</span>
+          <span class="text-sm">+7 (705) 124 59 88</span>
         </a>
       </div>
 
       <div class="flex items-center space-x-4 md:hidden">
-        <a href="tel:+77751442023" class="text-gray-700 flex items-center">
+        <a href="tel:+77051245988" class="text-gray-700 flex items-center">
           <i class="i-mdi:whatsapp text-xl text-green-500 mr-2" />
-          <span class="text-sm">+7 (775) 144-20-23</span>
+          <span class="text-sm">+7 (705) 124 59 88</span>
         </a>
         <div
           class="i-mdi:menu text-4xl text-gray-700 cursor-pointer"
