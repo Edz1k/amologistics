@@ -65,7 +65,7 @@ const cards = [
         <div class="text-white w-full lg:w-[70%]">
           <div class="text-xl leading-relaxed p-2 text-left rounded-2xl md:ml-10">
             <div>
-              <h1 class="text-4xl font-bold mb-10 text-center md:text-5xl">
+              <h1 class="text-4xl font-bold mb-9.5 text-center md:text-5xl">
                 {{ heroContent.heroText }}
               </h1>
 
