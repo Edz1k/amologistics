@@ -57,21 +57,18 @@ const cards = [
       :style="{ backgroundImage: `url('${heroContent.image}')` }"
     >
       <div class="bg-black/50 inset-0 absolute z-0" />
-      <p class="text-2xl text-white font-bold mt-2 text-center z-10">
-        {{ heroContent.subtitleTop }}
-      </p>
       <div class="mx-auto px-4 py-15 flex flex-col items-start z-10 container lg:items-start">
         <div class="h-10 hidden relative lg:block">
           <div class="bg-red-500 h-2 w-[100px] absolute" />
-          <div class="bg-red-500 h-[500px] w-2 absolute" />
-          <div class="bg-red-500 h-2 w-[150px] top-125 absolute" />
+          <div class="bg-red-500 h-[425px] w-2 absolute" />
+          <div class="bg-red-500 h-2 w-[150px] top-105 absolute" />
         </div>
 
         <div class="text-white w-full lg:w-[70%]">
           <div class="text-xl leading-relaxed p-2 text-left rounded-2xl md:ml-10">
             <div>
               <h1 class="text-4xl font-bold my-4 text-start md:text-5xl">
-                {{ heroContent.heroText }}
+                {{ heroContent.subtitleTop }}
               </h1>
 
               <div v-if="heroContent.heroSubtitle && heroContent.heroSubtitle.length > 0" class="mt-2 text-center space-y-2 md:mt-4">
@@ -93,7 +90,10 @@ const cards = [
                 </div>
               </div>
 
-              <ul v-if="heroContent.subtitleBottom && heroContent.subtitleBottom.length > 0" class="text-2xl font-500 mt-2 pl-0 list-none space-y-3 md:text-3xl md:pl-5">
+              <div class="text-xl font-600 text-start md:text-2xl">
+                {{ heroContent.heroText }}
+              </div>
+              <ul v-if="heroContent.subtitleBottom && heroContent.subtitleBottom.length > 0" class="text-lg font-400 mt-2 pl-0 list-none space-y-3 md:text-xl md:pl-5">
                 <li v-for="(item, idx) in heroContent.subtitleBottom" :key="idx">
                   {{ item }}
                 </li>
